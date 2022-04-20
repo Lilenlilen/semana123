@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML 3 formularios</title>
+    <meta name="author" content="Lilen Campodonico" />
+    <meta name="description" content="Ejercicio numero 3, FORMULARIOS" />
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>DATOS PERSONALES</legend>
+
+        <label for="name">Nombre:</label>
+        <input id="name" name="name" type="text" autofocus required />
+
+        <label for="email">Correo Electronico:</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="web">URL:</label>
+        <input
+          id="web"
+          name="web"
+          type="url"
+          placeholder="Escribe la URL de tu pagina web personal..."
+        />
+
+        <label for="phone">Telefono:</label>
+        <input id="phone" name="phone" type="tel" value="+34" readonly />
+      </fieldset>
+
+      <fieldset>
+        <legend>FECHAS:</legend>
+        <label for="date">Fecha:</label>
+        <input id="date" name="date" type="date" />
+
+        <label for="time">Tiempo:</label>
+        <input id="time" name="time" type="time" />
+
+        <label for="fyh">Fecha y Hora:</label>
+        <input id="fyh" name="fyh" type="datetime-local" />
+
+        <label for="month">Mes:</label>
+        <input id="month" name="month" type="month" />
+
+        <label for="week">Semana:</label>
+        <input id="week" name="week" type="week" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos Random</legend>
+
+        <label for="number">Numero:</label>
+        <input id="number" name="number" type="number" min="-10" max="10" />
+
+        <label for="search">Termino de Busqueda</label>
+        <input id="search" name="search" type="search" disabled />
+
+        <label for="colour">Color Favorito:</label>
+        <input id="colour" name="colour" type="color" />
+      </fieldset>
+      <button type="submit">ENVIAR</button>
+    </form>
+  </body>
+</html>
